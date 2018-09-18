@@ -45,4 +45,22 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this,MyTextViewActivity.class);
         startActivity(intent);
     }
+
+    //OnTouchEvent
+    public void touchEventTest(View view) {
+        Intent intent = new Intent(this,TouchEventTestActivity.class);
+        startActivity(intent);
+    }
+
+    //自定义控件-圆
+    public void circleView(View view) {
+        Intent intent = new Intent(this,CircleViewActivity.class);
+        startActivity(intent);
+    }
+
+    //自定义通知栏布局
+    public void notificationTest(View view) {
+        Intent intent = new Intent(this,NotificationActivity.class);
+        startActivity(intent);
+    }
 }

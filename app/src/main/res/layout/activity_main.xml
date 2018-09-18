@@ -41,4 +41,26 @@
         android:textAllCaps="false"
         android:onClick="MyTextViewTest"/>
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OnTouchEvent探索"
+        android:textAllCaps="false"
+        android:onClick="touchEventTest"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="自定义控件-圆"
+        android:textAllCaps="false"
+        android:onClick="circleView"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="自定义通知栏布局"
+        android:textAllCaps="false"
+        android:onClick="notificationTest"/>
+
+
 </LinearLayout>

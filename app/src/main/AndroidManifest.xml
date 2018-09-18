@@ -55,6 +55,12 @@
         </activity>
         <activity android:name=".ui.MyTextViewActivity">
         </activity>
+        <activity android:name=".ui.TouchEventTestActivity">
+        </activity>
+        <activity android:name=".ui.CircleViewActivity">
+        </activity>
+        <activity android:name=".ui.NotificationActivity">
+        </activity>
     </application>
 
 </manifest>
