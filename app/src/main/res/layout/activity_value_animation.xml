@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.demos.ui.ValueAnimationActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/six_three"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ObjectAnimator测试"
+        android:textAllCaps="false"
+        android:onClick="objectAnimatorDemo"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ValueAnimator测试"
+        android:textAllCaps="false"
+        android:onClick="valueAnimatorDemo"/>
+
+
+</LinearLayout>

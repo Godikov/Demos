@@ -1,11 +1,10 @@
 package com.example.administrator.demos.ui;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.example.administrator.demos.R;
 
-public class CircleViewActivity extends AppCompatActivity {
+public class CircleViewActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -1,24 +1,17 @@
 package com.example.administrator.demos.ui;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.example.administrator.demos.R;
 import com.example.administrator.demos.util.LogUtil;
 
-import java.util.concurrent.Callable;
 import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.CopyOnWriteArrayList;
-import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-import java.util.concurrent.Future;
-import java.util.concurrent.FutureTask;
 import java.util.concurrent.ScheduledExecutorService;
-import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
-public class ThreadDemoActivity extends AppCompatActivity {
+public class ThreadDemoActivity extends BaseActivity {
 
     public static Object mLockObject = new Object();
     int index = 0;

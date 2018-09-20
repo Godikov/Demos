@@ -1,6 +1,5 @@
 package com.example.administrator.demos.ui;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Html;
 import android.text.method.LinkMovementMethod;
@@ -12,7 +11,7 @@ import com.example.administrator.demos.model.Comment;
 import com.example.administrator.demos.model.User;
 import com.example.administrator.demos.util.CustomTagHandler;
 
-public class CommentActivity extends AppCompatActivity {
+public class CommentActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

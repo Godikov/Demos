@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context="com.example.administrator.demos.ui.AnimationTestActivity">
+
+    <View
+        android:id="@+id/view_animation"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="#000000"
+        android:layout_alignParentRight="true"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:onClick="startAnimation"
+        android:text="开始动画"/>
+
+</RelativeLayout>

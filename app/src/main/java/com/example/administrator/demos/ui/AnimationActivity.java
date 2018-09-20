@@ -2,7 +2,6 @@ package com.example.administrator.demos.ui;
 
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.widget.ImageView;
@@ -14,7 +13,7 @@ import com.example.administrator.demos.interpolator.SimpleInterpolator;
 /**
  *  动画demo
  * */
-public class AnimationActivity extends AppCompatActivity {
+public class AnimationActivity extends BaseActivity {
 
     private AnimatorSet animatorSet;
 

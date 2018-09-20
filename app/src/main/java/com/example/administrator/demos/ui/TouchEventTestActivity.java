@@ -1,8 +1,6 @@
 package com.example.administrator.demos.ui;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.MotionEvent;
 
 import com.example.administrator.demos.R;
 import com.example.administrator.demos.view.TouchBallView;
@@ -10,7 +8,7 @@ import com.example.administrator.demos.view.TouchBallView;
 /**
  *  TouchEvent探索
  * */
-public class TouchEventTestActivity extends AppCompatActivity {
+public class TouchEventTestActivity extends BaseActivity {
 
     private TouchBallView tbv;
 

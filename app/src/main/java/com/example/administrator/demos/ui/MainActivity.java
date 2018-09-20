@@ -2,13 +2,12 @@ package com.example.administrator.demos.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.example.administrator.demos.R;
 
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,4 +62,29 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this,NotificationActivity.class);
         startActivity(intent);
     }
+
+    //桌面小部件
+    public void desktopWidgetTest(View view) {
+        Intent intent = new Intent(this,TableWidgetActivity.class);
+        startActivity(intent);
+    }
+
+    //各种动画效果
+    public void animationTest(View view) {
+        Intent intent = new Intent(this,AnimationTestActivity.class);
+        startActivity(intent);
+    }
+
+    //列表动画
+    public void listAnimationTest(View view) {
+        Intent intent = new Intent(this,ListAnimationActivity.class);
+        startActivity(intent);
+    }
+
+    //属性动画
+    public void ValueAnimationTest(View view) {
+        startActivity(new Intent(this,ValueAnimationActivity.class));
+    }
+
+
 }

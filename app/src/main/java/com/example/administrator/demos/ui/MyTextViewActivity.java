@@ -1,12 +1,11 @@
 package com.example.administrator.demos.ui;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.example.administrator.demos.R;
 import com.example.administrator.demos.view.FollowTextView;
 
-public class MyTextViewActivity extends AppCompatActivity {
+public class MyTextViewActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

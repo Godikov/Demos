@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--updatePeriodMillis 小部件的自动更新周期，单位毫秒-->
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:initialLayout="@layout/table_widget"
+    android:minHeight="50dp"
+    android:minWidth="50dp"
+    android:updatePeriodMillis="86400000">
+
+</appwidget-provider>

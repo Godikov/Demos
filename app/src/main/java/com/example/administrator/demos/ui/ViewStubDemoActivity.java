@@ -1,6 +1,5 @@
 package com.example.administrator.demos.ui;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewStub;
@@ -8,7 +7,7 @@ import android.widget.ImageView;
 
 import com.example.administrator.demos.R;
 
-public class ViewStubDemoActivity extends AppCompatActivity {
+public class ViewStubDemoActivity extends BaseActivity {
 
     private ViewStub vs;
     private boolean is_inflated = false;
