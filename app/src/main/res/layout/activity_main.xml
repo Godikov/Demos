@@ -95,6 +95,54 @@
             android:textAllCaps="false"
             android:onClick="ValueAnimationTest"/>
 
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="图像采集1"
+            android:textAllCaps="false"
+            android:onClick="photoTest"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="图像采集2"
+            android:textAllCaps="false"
+            android:onClick="photoTest2"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="20周测试"
+            android:textAllCaps="false"
+            android:onClick="twentyWeeks"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RecyclerView一次性加载300条"
+            android:textAllCaps="false"
+            android:onClick="recyclerViewTest"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="选择图片测试"
+            android:textAllCaps="false"
+            android:onClick="uploadImgTest"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MVC模式学习"
+            android:textAllCaps="false"
+            android:onClick="MVCTest"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="通讯录界面"
+            android:textAllCaps="false"
+            android:onClick="AddressBookTest"/>
 
     </LinearLayout>
 

@@ -4,6 +4,9 @@ import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.PixelFormat;
 import android.graphics.drawable.Drawable;
+import android.media.Image;
+
+import java.nio.ByteBuffer;
 
 /**
  * Created by Administrator on 2018/5/21.
@@ -21,6 +24,12 @@ public class ImageUtil {
         drawable.setBounds(0, 0, drawable.getIntrinsicWidth(), drawable.getIntrinsicHeight());
         drawable.draw(canvas);
         return bitmap;
+    }
+
+    public static byte[] imageToByteArray(Image image){
+        ByteBuffer byteBuffer = image.getPlanes()[0].getBuffer();
+        byte[] bytes = new byte[byteBuffer.remaining()];
+        return bytes;
     }
 
 }

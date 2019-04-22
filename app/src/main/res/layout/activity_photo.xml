@@ -5,20 +5,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.administrator.demos.ui.AnimationActivity">
+    android:orientation="vertical"
+    tools:context="com.example.administrator.demos.ui.PhotoActivity">
 
+    <TextureView
+        android:id="@+id/tev"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 
-        <TextView
-            android:id="@+id/tv"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="10dp"/>
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#FFFFFF">
 
         <ImageView
             android:id="@+id/iv"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:layout_centerInParent="true"
-            android:background="@drawable/anim_frame"/>
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
 
 </RelativeLayout>

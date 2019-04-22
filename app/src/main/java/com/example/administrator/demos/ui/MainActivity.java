@@ -3,6 +3,7 @@ package com.example.administrator.demos.ui;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 
 import com.example.administrator.demos.R;
 
@@ -13,6 +14,7 @@ public class MainActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
     }
 
     //动画
@@ -86,5 +88,32 @@ public class MainActivity extends BaseActivity {
         startActivity(new Intent(this,ValueAnimationActivity.class));
     }
 
+    //实时获取摄像头图像
+    public void photoTest(View view) {
+        startActivity(new Intent(this,PhotoActivity.class));
+    }
 
+    public void photoTest2(View view) {
+        startActivity(new Intent(this,Photo2Activity.class));
+    }
+
+    public void twentyWeeks(View view) {
+        startActivity(new Intent(this,TwentyWeeksActivity.class));
+    }
+
+    public void recyclerViewTest(View view) {
+        startActivity(new Intent(this,RecyclerViewTestActivity.class));
+    }
+
+    public void uploadImgTest(View view) {
+        startActivity(new Intent(this,UploadImgActivity.class));
+    }
+
+    public void MVCTest(View view) {
+        startActivity(new Intent(this,MVCTestActivity.class));
+    }
+
+    public void AddressBookTest(View view) {
+        startActivity(new Intent(this,AddressBookActivity.class));
+    }
 }

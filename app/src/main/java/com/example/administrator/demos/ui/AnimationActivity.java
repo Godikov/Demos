@@ -5,10 +5,14 @@ import android.animation.ObjectAnimator;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.example.administrator.demos.R;
 import com.example.administrator.demos.evaluator.SimpleEvaluator;
 import com.example.administrator.demos.interpolator.SimpleInterpolator;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 /**
  *  动画demo
@@ -16,6 +20,7 @@ import com.example.administrator.demos.interpolator.SimpleInterpolator;
 public class AnimationActivity extends BaseActivity {
 
     private AnimatorSet animatorSet;
+    private TextView tv;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +28,11 @@ public class AnimationActivity extends BaseActivity {
         setContentView(R.layout.activity_second);
 
         final ImageView iv = (ImageView) findViewById(R.id.iv);
+        tv = (TextView) findViewById(R.id.tv);
+
+
+
+
 /*        AnimationDrawable animationDrawable = (AnimationDrawable) iv.getBackground();
         animationDrawable.start();
 
@@ -42,6 +52,8 @@ public class AnimationActivity extends BaseActivity {
         objectAnimator.setDuration(4000);
         objectAnimator.start();
 */
+
+        init();
 
         ObjectAnimator alphaAnimator = ObjectAnimator.ofFloat(iv,"alpha",1.0f,0.5f,0.0f,0.5f,1.0f);
         ObjectAnimator rotateAnimator = ObjectAnimator.ofFloat(iv,"rotation",90,0,-90,0,90,0,-90,0,90,0,-90,0,90,0,-90,0);
@@ -64,6 +76,27 @@ public class AnimationActivity extends BaseActivity {
     public boolean onTouchEvent(MotionEvent event) {
         animatorSet.start();
         return super.onTouchEvent(event);
+    }
+
+    private void init() {
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm");
+        Date date = new Date(System.currentTimeMillis());
+        Date newDate = null;//addDate(date, 30);
+
+
+        long time = date.getTime();
+        long day = 30L * 24 * 60 * 60 * 1000;
+        time += day;
+        newDate = new Date(time);
+
+        tv.setText(dateFormat.format(newDate));
+    }
+
+    public Date addDate(Date date, long day){
+        long time = date.getTime(); // 得到指定日期的毫秒数
+        day = day * 24 * 60 * 60 * 1000; // 要加上的天数转换成毫秒数
+        time += day; // 相加得到新的毫秒数
+        return new Date(time); // 将毫秒数转换成日期
     }
 
 }
