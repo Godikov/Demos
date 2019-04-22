@@ -125,6 +125,8 @@
         </activity>
         <activity android:name=".ui.AddressBookActivity">
         </activity>
+        <activity android:name=".ui.VelocityTrackerActivity">
+        </activity>
     </application>
 
 </manifest>

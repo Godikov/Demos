@@ -144,6 +144,12 @@
             android:textAllCaps="false"
             android:onClick="AddressBookTest"/>
 
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="VelocityTracker"
+            android:onClick="VelocityTrackerTest"/>
+
     </LinearLayout>
 
 </ScrollView>

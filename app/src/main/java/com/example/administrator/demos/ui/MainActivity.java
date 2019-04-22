@@ -116,4 +116,8 @@ public class MainActivity extends BaseActivity {
     public void AddressBookTest(View view) {
         startActivity(new Intent(this,AddressBookActivity.class));
     }
+
+    public void VelocityTrackerTest(View view) {
+        startActivity(new Intent(this,VelocityTrackerActivity.class));
+    }
 }
