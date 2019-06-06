@@ -150,6 +150,12 @@
             android:text="VelocityTracker"
             android:onClick="VelocityTrackerTest"/>
 
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lottie"
+            android:onClick="LottieTest"/>
+
     </LinearLayout>
 
 </ScrollView>

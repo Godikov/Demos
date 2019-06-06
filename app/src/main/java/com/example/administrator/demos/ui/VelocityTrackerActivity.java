@@ -27,9 +27,9 @@ public class VelocityTrackerActivity extends AppCompatActivity {
         @Override
         public boolean onTouch(View view, MotionEvent motionEvent) {
             velocityTracker.addMovement(motionEvent);
-            velocityTracker.computeCurrentVelocity(1000);
-            float xVelocity = velocityTracker.getXVelocity();
-            float yVelocity = velocityTracker.getYVelocity();
+            velocityTracker.computeCurrentVelocity(1000); //计算1000ms内的速度
+            float xVelocity = velocityTracker.getXVelocity(); //水平方向速度
+            float yVelocity = velocityTracker.getYVelocity(); //垂直方向速度
             Log.d("VelocityTrackerTest",xVelocity+" "+yVelocity);
             return true;
         }
